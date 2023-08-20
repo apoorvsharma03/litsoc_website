@@ -1,0 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #fdf5e2, #fce5b0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x:hidden
+}
