@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from "../assets/logo_black.png"
 import bit_logo from "../assets/bit_logo.png"
 import line from "../assets/vertical_line.png"
@@ -7,10 +8,9 @@ import "../App.css"
 
 const Header = () => {
   let LINKS = [
-    {name: "ABOUT", link: "#about_us"},
-    {name: "GALLERY", link: "#gallery"},
-    {name: "TEAM", link: "#team"},
-    {name: "CONTACT", link: "#contact"}
+              {name: "HOME", link: "/"}, 
+              {name: "OUR WORKS", link: "/our_works"}, 
+              {name: "TEAM", link: "/team"}, 
   ]
 
   const [open, setOpen] = useState(false)
@@ -25,7 +25,6 @@ const Header = () => {
         &nbsp;
         <div>
           <h1 className='text-lg md:text-3xl text-[#222222d4]'>The Literary Society</h1>
-          {/* <h2 className='text-lg md:text-xl md: text-[#2c2c2c]'>BIT Mesra</h2> */}
         </div>
       </div>
       <div onClick={()=>setOpen(!open)} className='absolute right-5 text-2xl cursor-pointer lg:hidden'>
@@ -35,7 +34,7 @@ const Header = () => {
         {
           LINKS.map((link) => (
             <li onClick={()=>setOpen(false)} className='p-2 mb-2 mt-2 lg:mt-0 lg:mb-0 mr-4 lg:mr-0 ml-4 font-[1100] text-[#222222d4] rounded-2xl duration-100 hover:text-[#f4f6d4] hover:bg-[#222222d4]'>
-              <a href={link.link}>{link.name}</a>
+                <Link to = {`${link.link}`}>{link.name}</Link>
             </li>
           ))
         }
