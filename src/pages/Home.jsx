@@ -4,7 +4,7 @@ import Gallery_bg from '../assets/gallery_bg.jpg'
 
 const Home = () => {
   return (
-    <div className='mt-[50px] lg:mt-[100px]'>
+    <div>
         <section id='home'>
           <div className='w-fit h-fit'>
             <h1 className='relative top-32 lg:top-40 bg-[#00000098] text-[#ccb57e] w-full text-center p-5 text-3xl z-50'>ABOUT US</h1>

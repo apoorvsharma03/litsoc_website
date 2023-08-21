@@ -12,6 +12,7 @@ const App = () => {
   return (
     <>
       <Header/>
+      <div className='h-[80px] md:h-[100px]'></div>
       <main>
         <Routes>
           <Route path="/" element={<Home/>} />
