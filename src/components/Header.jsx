@@ -10,7 +10,8 @@ const Header = () => {
   let LINKS = [
               {name: "HOME", link: "/"}, 
               {name: "OUR WORKS", link: "/our_works"}, 
-              {name: "TEAM", link: "/team"}, 
+              {name: "TEAM", link: "/team"},
+              {name: "CONTACT", link: "#contact"} 
   ]
 
   const [open, setOpen] = useState(false)
@@ -34,7 +35,11 @@ const Header = () => {
         {
           LINKS.map((link) => (
             <li onClick={()=>setOpen(false)} className='p-2 mb-2 mt-2 lg:mt-0 lg:mb-0 mr-4 lg:mr-0 ml-4 font-[1100] text-[#222222d4] rounded-2xl duration-100 hover:text-[#f4f6d4] hover:bg-[#222222d4]'>
+                {link.name == "CONTACT" ? (
+                  <a href="#contact">CONTACT</a>
+                ) : (
                 <Link to = {`${link.link}`}>{link.name}</Link>
+                )}
             </li>
           ))
         }
