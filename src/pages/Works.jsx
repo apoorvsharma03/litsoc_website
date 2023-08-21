@@ -19,7 +19,7 @@ const Works = () => {
           <section className='mt-5 mb-20'>
             <h1 className='text-2xl text-center md:text-left md:text-3xl text-[#222222d4]'>Stories and Tales</h1>
             <hr className='border-[#222222d4] mt-2 mb-5 lg:mb-10'/>
-            <div className='flex flex-wrap justify-center lg:justify-between'>
+            <div className='flex flex-wrap justify-center lg:flex-nowrap lg:justify-between'>
               <WorksCard />
               <WorksCard />
               <WorksCard />
@@ -30,7 +30,7 @@ const Works = () => {
           <section className='mt-5 mb-20'>
             <h1 className='text-2xl text-center md:text-left md:text-3xl text-[#222222d4]'>Literary Reviews</h1>
             <hr className='border-[#222222d4] mt-2 mb-5 lg:mb-10'/>
-            <div className='flex flex-wrap justify-center lg:justify-between'>
+            <div className='flex flex-wrap justify-center lg:flex-nowrap lg:justify-between'>
               <WorksCard />
               <WorksCard />
               <WorksCard />
@@ -41,7 +41,7 @@ const Works = () => {
           <section className='mt-5 mb-20'>
             <h1 className='text-2xl text-center md:text-left md:text-3xl text-[#222222d4]'>Blogs</h1>
             <hr className='border-[#222222d4] mt-2 mb-5 lg:mb-10'/>
-            <div className='flex flex-wrap justify-center lg:justify-between'>
+            <div className='flex flex-wrap justify-center lg:flex-nowrap lg:justify-between'>
               <WorksCard />
               <WorksCard />
               <WorksCard />
