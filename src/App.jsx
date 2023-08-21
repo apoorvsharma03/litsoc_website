@@ -1,14 +1,25 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import Header from './components/Header'
-import Footer from './components/Footer'
+import FooterSmall from './components/FooterSmall'
+import FooterLarge from './components/FooterLarge'
 
 import Home from './pages/Home'
 import Team from './pages/Team'
 import Works from './pages/Works'
 
 const App = () => {
+  const [width, setWidth]   = useState(window.innerWidth);
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+
   return (
     <>
       <Header/>
@@ -20,7 +31,11 @@ const App = () => {
           <Route path="/our_works" element={<Works/>} />
         </Routes>
       </main>
-      <Footer/>
+      {width < 1024 ? (
+        <FooterSmall/>
+      ) : (
+        <FooterLarge/>
+      )}
     </>
   )
 }
