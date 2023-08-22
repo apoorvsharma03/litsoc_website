@@ -32,6 +32,7 @@ const Carousel = () => {
           slideShadows: true,
         }}
         pagination={true}
+        initialSlide={3}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper max-w-[900px] pt-[50px] pb-[50px]"
       >

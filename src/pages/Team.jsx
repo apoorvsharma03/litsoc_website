@@ -1,5 +1,7 @@
 import React from 'react'
 import TeamCard from '../components/TeamCard'
+import Fac_ed_pic from '../assets/team/fac_ed.jpg'
+import Preisdent_pic from '../assets/team/president.jpg'
 import sampleimg from '../assets/logo_black.png'
 
 const Team = () => {
@@ -9,12 +11,12 @@ const Team = () => {
       <hr className='border-[#222222d4] mt-2 mb-5 lg:mb-10'/>
       <div className='flex flex-wrap justify-center lg:justify-between gap-y-10'>
         <div className='flex justify-center items-center flex-col'>
-          <TeamCard photo = {sampleimg}/>
+          <TeamCard photo = {Fac_ed_pic}/>
           <h2 className='mt-5'>Dr. Niraj Kumar Singh</h2>
           <h2 className='mt-1'>(Faculty Advisor)</h2>
         </div>
         <div className='flex justify-center items-center flex-col'>
-          <TeamCard photo = {sampleimg}/>
+          <TeamCard photo = {Preisdent_pic}/>
           <h2 className='mt-5'>Sparsh Anand</h2>
           <h2 className='mt-1'>(President)</h2>
         </div>
