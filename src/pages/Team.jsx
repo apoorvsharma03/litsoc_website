@@ -3,6 +3,7 @@ import TeamCard from '../components/TeamCard'
 import Fac_ed_pic from '../assets/team/fac_ed.jpg'
 import Preisdent_pic from '../assets/team/president.jpg'
 import Joint_president_1_pic from '../assets/team/joint_president_1.jpeg'
+import Joint_president_2_pic from '../assets/team/joint_president_2.jpeg'
 import sampleimg from '../assets/logo_black.png'
 
 const Team = () => {
@@ -27,7 +28,7 @@ const Team = () => {
           <h2 className='mt-1'>(Joint President)</h2>
         </div>
         <div className='flex justify-center items-center flex-col'>
-          <TeamCard photo = {sampleimg}/>
+          <TeamCard photo = {Joint_president_2_pic}/>
           <h2 className='mt-5'>Ayush</h2>
           <h2 className='mt-1'>(Joint President)</h2>
         </div>
