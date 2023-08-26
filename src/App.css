@@ -15,8 +15,3 @@ body{
     overflow-x:hidden
 }
 
-.card:hover{
-    transition: 0.2s;
-    transform: scale(1.1, 1.1);
-}
-

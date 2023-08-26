@@ -17,7 +17,7 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   return (
     <div className='flex justify-between items-center p-5 bg-[#ccb57e] fixed top-0 w-full max-h-[100px] z-[51]'>
-      <div className='flex justify-center items-center gap-2'>
+      <div className='flex justify-center items-center md:gap-2'>
         <a href='/' className='flex justify-evenly items-center gap-0.5'>
           <img src={bit_logo} alt="BIT Logo" className='w-10 p-0 md:w-[4rem]'/>
           <img src={line} alt="line" className='h-10 md:h-[4rem]' />
@@ -28,7 +28,7 @@ const Header = () => {
           <h1 className='text-lg md:text-3xl text-[#222222d4]'>The Literary Society</h1>
         </div>
       </div>
-      <div onClick={()=>setOpen(!open)} className='absolute right-5 text-2xl cursor-pointer lg:hidden'>
+      <div onClick={()=>setOpen(!open)} className='absolute right-5 flex items-center opacity-70 text-2xl cursor-pointer lg:hidden'>
         <ion-icon name={open? 'close':'menu'}></ion-icon>
       </div>
       <ul className={`absolute top-20 lg:static lg:flex lg:items-center lg:bg-transparent bg-[#ccb57e] transition-all duration-200 ease-in-out lg:z-auto z-[-2] ${open? 'right-0  opacity-100':'opacity-0 right-[-160px]  lg:opacity-100'}`}>
