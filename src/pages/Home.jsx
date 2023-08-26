@@ -1,9 +1,6 @@
 import React from 'react'
-
 import Carousel from '../components/Carousel'
-
 import About_bg from '../assets/about_bg.jpg'
-import Gallery_bg from '../assets/gallery_bg.jpg'
 
 const Home = () => {
   return (
