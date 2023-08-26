@@ -1,6 +1,7 @@
 import React from 'react'
 import WorksCard from '../components/WorksCard'
 import Works_bg from '../assets/works_bg.jpg'
+import SampleImg from  '../assets/logo_black.png'
 
 const Works = () => {
   return (
