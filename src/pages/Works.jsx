@@ -24,7 +24,7 @@ const Works = () => {
             <hr className='border-[#222222d4] mt-2 mb-5 lg:mb-10'/>
             <div className='flex flex-wrap justify-center lg:flex-nowrap lg:justify-between'>
               {Compositions.map(composition => (
-                <WorksCard name={composition.name} author={composition.author} insta_link={composition.insta_link} cover={composition.cover}/>
+                <WorksCard id = {composition.id} type="compositions" name={composition.name} author={composition.author} insta_link={composition.insta_link} cover={composition.cover}/>
               ))}
             </div>
           </section>
@@ -33,19 +33,19 @@ const Works = () => {
             <hr className='border-[#222222d4] mt-2 mb-5 lg:mb-10'/>
             <div className='flex flex-wrap justify-center lg:flex-nowrap lg:justify-between'>
               {Reviews.map(review => (
-                <WorksCard name={review.name} author={review.author} insta_link={review.insta_link} cover={review.cover}/>
+                <WorksCard id = {review.id} type="reviews" name={review.name} author={review.author} insta_link={review.insta_link} cover={review.cover}/>
               ))}
             </div>
           </section>
-          <section className='mt-5 mb-20'>
+          {/* <section className='mt-5 mb-20'>
             <h1 className='text-2xl text-center md:text-left md:text-3xl text-[#222222d4]'>Blogs</h1>
             <hr className='border-[#222222d4] mt-2 mb-5 lg:mb-10'/>
             <div className='flex flex-wrap justify-center lg:flex-nowrap lg:justify-between'>
               {Blogs.map(blog => (
-                <WorksCard name={blog.name} author={blog.author} insta_link={blog.insta_link} cover={blog.cover}/>
+                <WorksCard id = {blog.id} type="blogs" name={blog.name} author={blog.author} insta_link={blog.insta_link} cover={blog.cover}/>
               ))}
             </div>
-          </section>
+          </section> */}
         </div>
     </>
   )

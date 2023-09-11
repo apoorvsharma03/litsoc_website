@@ -1,9 +1,13 @@
-import SampleImg from '../assets/logo_black.png';
+import Composition1 from '../assets/work_covers/thehouseintheceruleansea.jpg'
+import Composition2 from '../assets/work_covers/gandhikisundarta.jpg'
+import Composition3 from '../assets/work_covers/deadpoetssociety.jpg'
+import Composition4 from '../assets/work_covers/thousandsplendidsuns.jpg'
+import Composition5 from '../assets/work_covers/aristotleanddante.jpg'
 
 export const Reviews = [
-    {name: "abc", author: "123", insta_link:"afsasfarg", cover: SampleImg},
-    {name: "def", author: "456", insta_link:"asfdasgsa", cover: SampleImg},
-    {name: "ghi", author: "789", insta_link:"gsddfgsdf", cover: SampleImg},
-    {name: "jkl", author: "012", insta_link:"jtyjuyjuj", cover: SampleImg},
-    {name: "mno", author: "345", insta_link:"cvncvbngf", cover: SampleImg},
+    {id: "1", name: "The House in the Cerulean Sea", author: "Priyanka Sinha", cover: Composition1},
+    {id: "2", name: "गांधी की सुंदरता", author: "मानस", cover: Composition2},
+    {id: "3", name: "Dead Poets Society", author: "Mohit and Akshat", cover: Composition3},
+    {id: "4", name: "A Thousand Splendid Suns", author: "Siddhant and Ritika", cover: Composition4},
+    {id: "5", name: "Aristotle and Dante Discover the Secrets of the Universe", author: "Garima & Bhavya", cover: Composition5},
   ];
